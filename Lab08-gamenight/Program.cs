@@ -102,3 +102,51 @@ for (int i = 0; i < players.Length; i++)
 
 File.WriteAllLines(POINTS_FILE, points);
 System.Console.WriteLine($"Tonight's winner: {Mostvaluableplayer} with {Highestpoints}");
+
+// Part 3: Read previous game nights and add tonight's result to the history.
+
+string[] entry = { HistoryEntry(tonightNum, Mostvaluableplayer, Highestpoints) };
+File.AppendAllLines(HISTORY_FILE, entry);
+System.Console.WriteLine("Saved points.txt");
+System.Console.WriteLine($"Added to history.txt: {entry[0]}");
+
+
+
+// Creates the formatted history entry for a game night.
+static string HistoryEntry(int night, string winner, int points)
+{
+    return $"Night {night}: {winner} won with {points} points";
+}
+
+// Returns the index of the player with the highest season score.
+static int LeaderIndex(string[] points)
+{
+    int highscore = 0;
+
+    int bestplayer = 0;
+
+// for: I need to compare every score and keep track of the index belonging to the highest one.
+        for (int i = 0; i < points.Length; i++)
+    {
+        if (Convert.ToInt32(points[i]) > highscore)
+        {
+            highscore = Convert.ToInt32(points[i]);
+            bestplayer = i;
+        }
+    }
+
+    return bestplayer;
+}
+
+// Adds all player scores together and returns the season total.
+static int TotalPoints(string[] points)
+{
+    int pointtotal = 0;
+
+// foreach: I need to add every score to the total, and I don't need to track their positions.
+    foreach (string point in points)
+    {
+    pointtotal += Convert.ToInt32(point);
+    }
+    return pointtotal;
+}
