@@ -68,3 +68,37 @@ System.Console.WriteLine($"Leader: {players[bestplayer]} with {points[bestplayer
 System.Console.WriteLine($"Season Total: {pointtotal}");
 
 
+// PART 2: Collect tonight's scores, update the season totals, and find tonight's winner.
+
+int tonightscore;
+int season;
+string Mostvaluableplayer = "";
+int Highestpoints = -1;
+
+// for: I need to go through each player in order and use the same index to access their name and season points.
+for (int i = 0; i < players.Length; i++)
+{
+    System.Console.Write($"How many points did {players[i]} get tonight: ");
+    tonightscore = Convert.ToInt32(Console.ReadLine());
+
+// while: I don't know how many attempts it will take for a player to enter a valid score, so im keeping them in prompt purgatory until they follow my rules 
+    while (tonightscore < 0 || tonightscore > MAX_POINTS)
+    {
+        System.Console.WriteLine("Points must be from 0 to 20.");
+        System.Console.Write($"How many points did {players[i]} get tonight: ");
+        tonightscore = Convert.ToInt32(Console.ReadLine());
+    }
+    System.Console.WriteLine($"Points for {players[i]} tonight: {tonightscore}");
+    season = Convert.ToInt32(points[i]) + tonightscore;
+    points[i] = season.ToString();
+    if (tonightscore > Highestpoints)
+    {
+        Highestpoints = tonightscore;
+        Mostvaluableplayer = players[i];
+    }
+
+}
+
+
+File.WriteAllLines(POINTS_FILE, points);
+System.Console.WriteLine($"Tonight's winner: {Mostvaluableplayer} with {Highestpoints}");
