@@ -1,0 +1,14 @@
+C:\Users\codez\CSCI1250\Lab08-gamenight\Lab08-gamenight\bin\Debug\net10.0\Lab08-gamenight.exe
+C:\Users\codez\CSCI1250\Lab08-gamenight\Lab08-gamenight\bin\Debug\net10.0\Lab08-gamenight.deps.json
+C:\Users\codez\CSCI1250\Lab08-gamenight\Lab08-gamenight\bin\Debug\net10.0\Lab08-gamenight.runtimeconfig.json
+C:\Users\codez\CSCI1250\Lab08-gamenight\Lab08-gamenight\bin\Debug\net10.0\Lab08-gamenight.dll
+C:\Users\codez\CSCI1250\Lab08-gamenight\Lab08-gamenight\bin\Debug\net10.0\Lab08-gamenight.pdb
+C:\Users\codez\CSCI1250\Lab08-gamenight\Lab08-gamenight\obj\Debug\net10.0\Lab08-gamenight.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\codez\CSCI1250\Lab08-gamenight\Lab08-gamenight\obj\Debug\net10.0\Lab08-gamenight.AssemblyInfoInputs.cache
+C:\Users\codez\CSCI1250\Lab08-gamenight\Lab08-gamenight\obj\Debug\net10.0\Lab08-gamenight.AssemblyInfo.cs
+C:\Users\codez\CSCI1250\Lab08-gamenight\Lab08-gamenight\obj\Debug\net10.0\Lab08-gamenight.csproj.CoreCompileInputs.cache
+C:\Users\codez\CSCI1250\Lab08-gamenight\Lab08-gamenight\obj\Debug\net10.0\Lab08-gamenight.dll
+C:\Users\codez\CSCI1250\Lab08-gamenight\Lab08-gamenight\obj\Debug\net10.0\refint\Lab08-gamenight.dll
+C:\Users\codez\CSCI1250\Lab08-gamenight\Lab08-gamenight\obj\Debug\net10.0\Lab08-gamenight.pdb
+C:\Users\codez\CSCI1250\Lab08-gamenight\Lab08-gamenight\obj\Debug\net10.0\Lab08-gamenight.genruntimeconfig.cache
+C:\Users\codez\CSCI1250\Lab08-gamenight\Lab08-gamenight\obj\Debug\net10.0\ref\Lab08-gamenight.dll
